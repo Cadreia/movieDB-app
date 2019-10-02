@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div id="app-search">
+  <app-search></app-search>
+</div>
+
+<div id="app-movie">
+ <app-movies *ngIf="!moviedb_service.isSearched"></app-movies>
+</div>

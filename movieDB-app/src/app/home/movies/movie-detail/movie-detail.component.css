@@ -1,0 +1,9 @@
+* {
+    background-color: black;
+}
+.container-fluid {
+    height: 100vh;
+}
+hr, .badge {
+    background: green;
+}

@@ -1,0 +1,10 @@
+<app-loading *ngIf="!popularMovies"></app-loading>
+<div>
+    <h3 class="pt-4 text-center"><span>P</span>opular <span>M</span>ovies</h3>
+    <app-movies-item [items]="popularMovies"></app-movies-item>
+</div>
+
+<div>
+    <h3 class="pt-4 text-center"><span>Up</span>coming <span>M</span>ovies</h3>
+    <app-movies-item [items]="upcomingMovies"></app-movies-item>
+</div>

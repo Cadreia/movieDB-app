@@ -1,0 +1,14 @@
+<div class="container py-4 ">
+    <div class="jumbotron">
+        <h1>Find a Movie</h1>
+        <p>Search for a movie using the form below</p>
+        <div class="input-group">
+            <input #searched class="form-control" type="text" placeholder="e.g, Titanic">
+            <div class="input-group-append p-3">
+                <span class="fas fa-search"></span>
+            </div>
+        </div>
+        <button (click)="findMovie(searched.value)" class="btn btn-success btn-sm" type="button">Find</button>
+    </div>
+</div>
+<app-search-item [movies]="searchedMovies" *ngIf="moviedb_service.isSearched"></app-search-item>

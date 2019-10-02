@@ -1,0 +1,14 @@
+.title {
+    color: green;
+    font-size: 30px !important;
+    font-weight: bold;
+}
+ul li a {
+    color: rgba(0,0,0,1);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border-bottom: 2px solid green;
+}
+ul li a:hover {
+    color: green;
+}
